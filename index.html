@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>
+        Image identification
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <br>
+            <br>
+            <p class="btn btn-defualt heading">Image identfication</p>
+
+            <h2>Model is traned to identfy the followng objects:</h2>
+
+            <h3>Calculator</h3>
+            <hr>
+            <h3> Stamp</h3>
+            <hr>
+            <h3>Fitbit (Expensive)</h3>
+            <hr>
+            <h3>Stapler</h3>
+            <hr>
+            <h3>Stapler</h3>
+            <hr>
+            <h3>Spare phone (Expensive)</h3>
+            <hr>
+            <h3>las vegas</h3>
+            <hr>
+            <h3>post it</h3>
+
+            <br>
+            <br>
+
+            <h2 >Webcam view:</h2>
+            <div id="camera"></div>
+            <br>
+            <br>
+            <div id="cap"></div>
+            <button class="btn btn-info" onclick="take_snap()">Capture </button>
+            <br>
+            <br>
+            <button class="btn btn-success" onclick="chek()">identify image</button>
+            <br>
+            <label> Object - <span id="obj"></span></label>
+        
+            <br>
+            <label> Accuracy - <span id="accu"></span></label>
+
+        </center>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
